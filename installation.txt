@@ -1,0 +1,2 @@
+npm install axios moment redux redux-thunk
+npm install --force react-filebase64
