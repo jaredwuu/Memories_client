@@ -11,8 +11,7 @@ const Posts = ({setCurrentId}) => {
     const classes =useStyles();
 
 
-    return (
-        
+    return (       
     
          !posts.length ? <CircularProgress />:(
             <Grid className = {classes.container} container alignItems = "stretch" spacing ={3} >
