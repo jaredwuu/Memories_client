@@ -25,13 +25,15 @@ const Auth = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(isSignup){
+            
             dispatch(signup(formData,history));
+
 
         }else{
             dispatch(signin(formData,history));
 
         }
-        console.log(formData);
+        //console.log(formData);
 
     };
 
@@ -42,7 +44,7 @@ const Auth = () => {
 
     const switchMode = ()=>{
         setisSignup((preIsSignup)=>!preIsSignup);
-        handleShowPassword(false);
+        setShowPassword(false);
     }
 
     const googleSuccess = async (res)=>{
