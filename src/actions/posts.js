@@ -30,7 +30,6 @@ export const updatePost = (id, post) =>async (dispatch)=>{
         
     } catch (error) {
         console.log(error);
-
     }
 
 }
